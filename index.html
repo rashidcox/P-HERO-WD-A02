@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Wave</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        /* font */
+        --font-family: 'Inter';
+        /* colors */
+        --color-c_one: #412567;
+        --color-c_two: #FFFFFF;
+        --color-c_three: #00FF88;
+        --color-c_four: #1A0B2E;
+        --color-c_five: #00FF88;
+        --color-c_six: #230E3D;
+        /* button */
+      }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .btn {
+            background: linear-gradient(213deg, rgba(145, 0, 248, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        }
+    </style>
+
 </head>
-<body>
+
+<body class="inter">
     <header>
-        
+        <div class="bg-c_one  h-[92px]">
+            <nav class="max-w-[1600px] mx-auto flex justify-between items-center h-full">
+                <div class="logo"><a href="#"><img src="assets/TechWave.png" alt=""></a></div>
+                <ul class="flex gap-20 text-c_two text-lg">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+                <div>
+                    <button
+                        class="text-lg font-semibold text-c_two py-3 px-4 rounded-[50px] bg-linear-45 from-purple-500 to-pink-500 via-black ">Subscribe
+                        &#8594</button>
+                </div>
+            </nav>
+        </div>
     </header>
 </body>
+
 </html>
