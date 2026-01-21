@@ -40,17 +40,18 @@
 <body class="inter">
     <header>
         <div class="bg-c_one  h-[92px]">
-            <nav class="max-w-[1600px] mx-auto flex justify-between items-center h-full">
+            <nav class="max-w-[1600px] mx-auto flex justify-around items-center h-full ">
                 <div class="logo"><a href="#"><img src="assets/TechWave.png" alt=""></a></div>
-                <ul class="flex gap-20 text-c_two text-lg">
+                <ul class="hidden lg:flex gap-20 text-c_two text-lg ">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Episodes</a></li>
                     <li><a href="#">Host</a></li>
                 </ul>
-                <div>
+                <div class="hidden lg:block">
                     <button class="text-lg font-semibold text-c_two py-3 px-4 rounded-[50px] btn">Subscribe
                         &#8594</button>
                 </div>
+                <div class="sm:block lg:hidden"><img src="assets/hamburger-menu.png" alt=""></div>
             </nav>
         </div>
         <section
@@ -88,7 +89,7 @@
 
         </section>
     </header>
-    <main>
+    <main class="">
         <!-- about section -->
         <section class="bg-c_four">
             <div class="max-w-[1600px] m-auto h-[646px] pt-[50px]">
